@@ -1,0 +1,8 @@
+Learning Goals:
+Understand event interaction (AllOf, AnyOf)
+
+Learn to model interrupts, stores, and containers
+
+Simulate dynamic behavior (e.g. breakdowns, shared storage)
+
+Encourage what-if analysis and basic performance metrics

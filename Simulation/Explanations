@@ -1,0 +1,6 @@
+| Concept       | What it does                           | Real-world analogy               |
+| ------------- | -------------------------------------- | -------------------------------- |
+| `Environment` | Controls time and process execution    | The master scheduler             |
+| `Process`     | A behavior that unfolds over time      | A person or entity doing tasks   |
+| `Resource`    | Something limited that processes share | A machine, room, vehicle, etc.   |
+| `Event`       | A condition that must be fulfilled     | A clock tick, or an availability |
