@@ -1,0 +1,115 @@
+✅ Types of Queuing Systems with Descriptions & Sample Projects
+1. Single-Server Queue (M/M/1)
+Description:
+A basic model with one server, exponential interarrival and service times. Customers wait in a single line.
+
+Applications: Bank teller, Helpdesk, Single cashier.
+
+Project:
+Simulate a Bank Queue System
+
+Use Python or Simul8 to model arrival of customers and average wait time.
+
+Measure system utilization, average queue length, and waiting time.
+
+2. Multi-Server Queue (M/M/c)
+Description:
+Multiple servers (e.g., c = 3), exponential arrival/service times. All customers wait in one queue and go to the next available server.
+
+Applications: Airport check-in, hospital triage.
+
+Project:
+Simulate an Airport Check-in Counter
+
+Simulate passenger arrivals to 3 check-in counters.
+
+Compare customer wait times with different numbers of servers (c).
+
+3. Finite Queue (M/M/1/K or M/M/c/K)
+Description:
+A queue system with limited buffer or capacity 
+𝐾
+K. If the queue is full, new arrivals are rejected or lost.
+
+Applications: Network routers, toll booths.
+
+Project:
+Simulate a Wi-Fi Router Buffer System
+
+Model packets arriving at a router with a buffer limit of 10.
+
+Track packet drop rate and average queue occupancy.
+
+4. Priority Queues (M/M/1 with Priority)
+Description:
+Customers have different priority levels. Higher-priority customers are served first. Can be preemptive or non-preemptive.
+
+Applications: Emergency rooms, customer support.
+
+Project:
+Simulate a Hospital ER Queue
+
+Patients arrive with “low”, “medium”, and “critical” severity.
+
+Measure wait time differences among priorities.
+
+5. Network of Queues (Jackson Networks)
+Description:
+Multiple connected queues where jobs flow from one to another. Each node behaves like an M/M/1 or M/M/c queue.
+
+Applications: Manufacturing systems, computer networks.
+
+Project:
+Simulate a Manufacturing Plant with 3 Stations
+
+Parts go from Station A → B → C.
+
+Simulate processing delays and congestion at each station.
+
+6. Discrete-Event Simulation (General Queues)
+Description:
+Any queuing system modeled using time-driven events: arrival, service, departure. Supports complex arrival/service patterns.
+
+Applications: Call centers, logistics systems.
+
+Project:
+Create a Discrete-Event Simulator for a Call Center
+
+Random arrival and service times.
+
+Simulate day-to-day operations and evaluate staffing needs.
+
+7. Queues with Balking and Reneging
+Description:
+
+Balking: Customers decide not to join if the queue is too long.
+
+Reneging: Customers leave after waiting too long.
+
+Applications: Fast food restaurants, online support queues.
+
+Project:
+Model a Restaurant Queue with Impatient Customers
+
+Include conditions where customers may leave or refuse to join.
+
+Track loss of business and system performance.
+
+8. G/G/1 Queue (General Interarrival & Service)
+Description:
+A general model where arrival and service times follow arbitrary distributions.
+
+Applications: Real-world systems where normal distributions apply, not exponential.
+
+Project:
+Simulate a Complex Support Ticket System
+
+Use real or generated data for arrival/service times (e.g., normal, log-normal).
+
+Analyze variance impact on wait times and system stability.
+
+📌 Teaching Tip:
+Use simpy (Python) or Arena / Simul8 / AnyLogic to simulate.
+
+Visualize queue growth, waiting time graphs, and server utilization.
+
