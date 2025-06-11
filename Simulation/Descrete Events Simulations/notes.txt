@@ -1,0 +1,21 @@
+📦 Discrete-Event Simulation (DES)
+Topic Title: Building a Discrete-Event Simulator from Scratch
+
+✅ Why Teach It?
+It builds foundational understanding behind simpy.
+
+Shows how real-world systems (logistics, networks, manufacturing) are modeled using events like arrival, service, departure.
+
+Perfect for visualizing time-driven systems.
+
+🧠 Core Concepts to Cover:
+Concept	Explanation
+Event	A change in the system state at a specific time (e.g., arrival, start service, departure).
+Future Event List (FEL)	A sorted list of all upcoming events.
+Clock	Tracks simulation time.
+State Variables	Represent the system (e.g., number in queue, server status).
+Simulation Loop	Processes the next event, updates state, advances clock.
+
+
+
+
