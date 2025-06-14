@@ -1,34 +1,32 @@
-Lab Practical Question: Multi-Service Hospital Simulation with Discrete Events
-💡 Scenario:
-You are tasked with building a simulation model of a hospital outpatient department with the following features:
 
-Patients arrive randomly (Poisson process).
+You are tasked with building a simulation model of a hospital outpatient department with the following features
 
-They first register at one of 2 registration desks (M/M/2).
+1.Patients arrive randomly (Poisson process).
 
-Then they queue to see a doctor (3 doctors available: M/M/3).
+T2.hey first register at one of 2 registration desks (M/M/2).
 
-After the doctor, some patients (30%) go to a lab with 1 server (M/M/1); the rest leave.
+3.Then they queue to see a doctor (3 doctors available: M/M/3).
+
+4.After the doctor, some patients (30%) go to a lab with 1 server (M/M/1); the rest leave.
 
 Include a limited waiting area (K = 10) at the registration and lab.
 
 Patients balk if the registration is full, and renege (leave) if waiting for a doctor takes more than 10 minutes.
 
-Collect and report:
+Output
 
-Average waiting time per stage
+1.Average waiting time per stage
 
-Total time spent in the system
+2.Total time spent in the system
 
-Number of patients served, balked, or reneged
+3.Number of patients served, balked, or reneged
 
-🛠️ Task Instructions:
+Task Instructions
 Implement the full system using simpy.
 
 Apply M/M/c, finite queue, balking, reneging, and DES concepts.
 
-Add statistics collection and generate graphs (e.g., waiting time vs stage).
+Bonus Question
+Add statistics collection and generate graphs (waiting time vs stage).
 
 Simulate for 8 hours (480 minutes).
-
-Export key performance metrics to a CSV file.
