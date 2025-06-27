@@ -1,0 +1,57 @@
+💼 Project Title: Hospital Management System
+🎯 Objective:
+To build a hospital management system that handles patient registration, doctor assignments, appointment scheduling, billing, and staff management — all using a solid object-oriented approach without abstraction.
+
+🧩 OOP Concepts Involved
+✅ 1. Encapsulation
+Each entity like Patient, Doctor, and Staff will have private data members such as name, ID, medicalHistory, salary, etc.
+
+These will be accessed and modified only through public getters and setters.
+
+For instance:
+
+Patient objects expose only methods like getMedicalHistory() or addDiagnosis() rather than allowing direct field manipulation.
+
+✅ 2. Inheritance
+You’ll create a base class Person with common attributes (name, age, gender, contactInfo).
+
+Subclasses like Patient, Doctor, Nurse, and Receptionist will inherit from Person and extend functionality.
+
+Doctor may add specialization, schedule, prescribeMedication().
+
+Patient adds illness, appointmentHistory.
+
+✅ 3. Polymorphism
+The system maintains a list of Person references, allowing you to treat all individuals generically while still enabling specific behavior via method overriding.
+
+Example: All Person objects have a displayInfo() method, but each subclass overrides it to show relevant details (e.g., Patient shows diagnosis, Doctor shows department).
+
+📦 Components of the Project
+🧍 1. Person Management
+Register patients, doctors, and staff.
+
+Update and retrieve information.
+
+Assign unique IDs automatically.
+
+🗓️ 2. Appointment Module
+Patients can book appointments with available doctors.
+
+Doctors maintain their schedules via internal lists.
+
+Time slots are checked and managed through encapsulated methods.
+
+💊 3. Medical Records and Prescriptions
+Doctors can add diagnoses, prescriptions to patient history.
+
+Records are not exposed directly, but modified through controlled methods.
+
+💳 4. Billing System
+Patients are billed based on appointments, procedures, and medications.
+
+Billing is handled through encapsulated logic ensuring no direct manipulation of charges or totals.
+
+👥 5. Staff Hierarchy
+Staff → Admin, Nurse, Receptionist, all with roles and permission levels.
+
+You can implement a polymorphic performDuties() method to show different work routines per staff type.
